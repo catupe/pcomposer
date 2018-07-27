@@ -1,9 +1,9 @@
 {
-    "name": "acme/blog",
+    "name": "catupe/pcomposer",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/username/hello-world"
+            "url": "https://github.com/catupe/pcomposer.git"
         }
     ],
     "require": {
