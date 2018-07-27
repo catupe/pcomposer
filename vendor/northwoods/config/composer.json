@@ -1,0 +1,63 @@
+{
+    "name": "northwoods/config",
+    "type": "library",
+    "description": "Simple configuration loader",
+    "homepage": "https://github.com/northwoods/config",
+    "license": "MIT",
+    "keywords": [
+        "config",
+        "configuration",
+        "loading",
+        "management",
+        "directory",
+        "yaml",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Gabriel Bull",
+            "email": "me@gabrielbull.com"
+        },
+        {
+            "name": "Jenner",
+            "email": "hypxm@qq.com"
+        },
+        {
+            "name": "Woody Gilk",
+            "email": "woody.gilk@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "eloquent/phony-phpunit": "^3.0",
+        "squizlabs/php_codesniffer": "^3.0",
+        "symfony/yaml": "^2.8 || ^3.0"
+    },
+    "suggest": {
+       "josegonzalez/dotenv": "Adds support for loading .env files",
+       "symfony/yaml": "Adds support for loading .yaml files"
+    },
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ],
+        "psr-4": {
+            "Northwoods\\Config\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Northwoods\\Config\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check": "phpcs -n"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "name"              : "jbzoo/utils",
+    "type"              : "library",
+    "description"       : "A collection of useful PHP functions, mini classes and snippets that you need every day.",
+    "license"           : "MIT",
+    "minimum-stability" : "stable",
+    "keywords"          : [
+        "helpers", "helper", "utility", "utils", "collection", "environment", "image", "filesystem",
+        "array", "cli", "command line", "dates", "email", "env", "filter", "http", "url", "serialize",
+        "slugify", "string", "mbstring", "timer", "misc"
+    ],
+    "authors"           : [
+        {
+            "name"  : "SmetDenis",
+            "email" : "denis@jbzoo.com",
+            "role"  : "lead"
+        },
+        {
+            "name"  : "Brandon Wamboldt",
+            "email" : "brandon.wamboldt@gmail.com"
+        },
+        {
+            "name"  : "Luís Nóbrega",
+            "email" : "luis.barros.nobrega@gmail.com"
+        }
+    ],
+    "require"           : {
+        "php"        : ">=7.0",
+        "jbzoo/data" : "^1.6|^2.0"
+    },
+    "require-dev"       : {
+        "jbzoo/phpunit"             : "^2.2",
+        "jbzoo/profiler"            : "^1.0",
+        "symfony/process"           : "^3.3",
+        "symfony/polyfill-mbstring" : "^1.6",
+        "satooshi/php-coveralls"    : "^1.0.2"
+    },
+    "suggest"           : {
+        "ext-mbstring"              : "Provides multibyte specific string functions",
+        "symfony/process"           : "For Cli::exec() method only",
+        "symfony/polyfill-mbstring" : "For UTF-8 if ext-mbstring disabled"
+    },
+    "autoload"          : {
+        "files" : [
+            "src/defines.php"
+        ],
+        "psr-4" : {
+            "JBZoo\\Utils\\" : "src"
+        }
+    },
+    "extra"             : {
+        "branch-alias" : {
+            "dev-master" : "1.x-dev"
+        }
+    },
+    "config"            : {
+        "optimize-autoloader" : true
+    },
+    "support"           : {
+        "issues" : "https://github.com/JBZoo/Utils/issues"
+    }
+}

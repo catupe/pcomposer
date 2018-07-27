@@ -1,0 +1,47 @@
+{
+    "name"              : "jbzoo/data",
+    "type"              : "library",
+    "description"       : "Extended implementation of ArrayObject",
+    "license"           : "MIT",
+    "keywords"          : ["ArrayObject", "Array", "Config", "Data", "ini", "yml", "params", "json"],
+    "minimum-stability" : "stable",
+    "authors"           : [
+        {
+            "name"  : "SmetDenis",
+            "email" : "denis@jbzoo.com",
+            "role"  : "lead"
+        }
+    ],
+    "require"           : {
+        "php"         : ">=7.0",
+        "jbzoo/utils" : "^2.2.1"
+    },
+    "require-dev"       : {
+        "jbzoo/phpunit"          : "^2.2.1",
+        "jbzoo/profiler"         : "^1.0.5",
+        "symfony/yaml"           : "^3.3.13",
+        "satooshi/php-coveralls" : "^1.0.2"
+    },
+    "suggest"           : {
+        "symfony/yaml" : "^3.3.13"
+    },
+    "autoload"          : {
+        "files" : [
+            "src/functions.php"
+        ],
+        "psr-4" : {
+            "JBZoo\\Data\\" : "src"
+        }
+    },
+    "extra"             : {
+        "branch-alias" : {
+            "dev-master" : "1.x-dev"
+        }
+    },
+    "config"            : {
+        "optimize-autoloader" : true
+    },
+    "support"           : {
+        "issues" : "https://github.com/SmetDenis/Data/issues"
+    }
+}
