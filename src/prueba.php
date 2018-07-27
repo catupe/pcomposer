@@ -12,6 +12,7 @@
   $data = $conf->all();
 
   var_dump($conf->get('desarrollo'));
+  s
   */
 
   use Northwoods\Config\ConfigFactory;
