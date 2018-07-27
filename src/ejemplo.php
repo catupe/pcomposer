@@ -6,7 +6,7 @@
 
   $cfg = new Configuracion('../config/configuracion.ini', 'desarrollo');
   echo "<pre>";
-  //var_dump($cfg->getAll());
+  //var_dump($cfg->getAll());s
   /*
   $cfg->parseAll();
   */
